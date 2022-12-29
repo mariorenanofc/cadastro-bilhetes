@@ -1,5 +1,6 @@
 
 <script>
+import Info from './components/Info.vue'
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycle.vue';
 import Pessoa from './components/Pessoa.vue'
@@ -8,7 +9,8 @@ import Pessoa from './components/Pessoa.vue'
   components: { 
     PrimeiroComponente,
     LifeCycle,
-    Pessoa
+    Pessoa,
+    Info
   },
   name: 'App',
   }
@@ -19,5 +21,6 @@ import Pessoa from './components/Pessoa.vue'
     <PrimeiroComponente />
     <LifeCycle />
     <Pessoa />
+    <Info  />
   </div>
 </template>
