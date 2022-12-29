@@ -19,7 +19,7 @@ import Form from './Form.vue'
         data() {
             return {   
                 nome: 'Aqui vamos estruturar e organizar os dados de seus clientes e seus bilhetes. Não se preocupe vamos deixar tudo mais simples. 😉',
-                esta_trabalhando: false,
+                esta_trabalhando: true,
                 mostrar_nome: false,
                 status: 'Você esta logado!',
                 textoBotao: 'Mostrar Situação'
