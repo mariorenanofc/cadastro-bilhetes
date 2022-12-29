@@ -2,11 +2,13 @@
 <script>
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycle.vue';
+import Pessoa from './components/Pessoa.vue'
   export default{
   
   components: { 
     PrimeiroComponente,
-    LifeCycle
+    LifeCycle,
+    Pessoa
   },
   name: 'App',
   }
@@ -16,5 +18,6 @@ import LifeCycle from './components/LifeCycle.vue';
   <div>
     <PrimeiroComponente />
     <LifeCycle />
+    <Pessoa />
   </div>
 </template>
