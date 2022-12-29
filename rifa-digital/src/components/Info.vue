@@ -1,5 +1,6 @@
 <template>
     <div>
+        
         <p>Para Acessar meu portifólio basta <a target="_blank" v-bind:href="meu_link">clicar aqui</a></p>
         <Picture />
     </div>

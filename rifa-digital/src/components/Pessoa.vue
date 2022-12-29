@@ -7,7 +7,7 @@
         <br>
         <p  v-if="esta_trabalhando">🟢 - Sistema Online</p>
         <p  v-else> 🟠 - Sistema Offline</p>
-
+        <button @click="showConteudo">{{ textoBotao }}</button>
     </div>
 </template>
 
@@ -20,9 +20,20 @@ import Form from './Form.vue'
             return {   
                 nome: 'Aqui vamos estruturar e organizar os dados de seus clientes e seus bilhetes. Não se preocupe vamos deixar tudo mais simples. 😉',
                 esta_trabalhando: false,
-                mostrar_nome: true,
-                status: 'Você esta logado!'
+                mostrar_nome: false,
+                status: 'Você esta logado!',
+                textoBotao: 'Mostrar Situação'
                 
+            }
+        },
+        methods: {
+            showConteudo(){
+                this.mostrar_nome = !this.mostrar_nome
+                if(!this.mostrar_nome) {
+                    this.textoBotao = 'Mostrar Conteúdo'
+                } else {
+                    this.textoBotao = 'Esconder Situação'
+                }
             }
         }
     }
