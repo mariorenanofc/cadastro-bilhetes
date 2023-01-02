@@ -18,7 +18,7 @@
         mounted() {
             setTimeout(() => {
                 this.name = 'João Pedro';
-            }, 3000)
+            }, 300)
             
         }
     }

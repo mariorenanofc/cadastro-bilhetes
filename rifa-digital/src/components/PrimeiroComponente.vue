@@ -1,18 +1,25 @@
 <template>
     <div>
         <h1>🍀 Polo da Sorte</h1>
+        <MultiplosEventos />
         <p>Seja bem vindo {{ nome }} {{ profissao }}</p>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'PrimeiroComponente',
-        data(){
-            return {
-                nome:"Matheus Rodrigues",
-                profissao: "vamos aos negócios!"
-            }
-        }
-    }
+import MultiplosEventos from './MultiplosEventos.vue';
+
+
+
+export default {
+
+    name: "PrimeiroComponente",
+    components: { MultiplosEventos },
+    data() {
+        return {
+            nome: "Matheus Rodrigues",
+            profissao: "vamos aos negócios!"
+        };
+    },
+}
 </script>
