@@ -13,3 +13,9 @@
         }
     }
 </script>
+
+<style scoped>
+    img {
+        width: 180px;
+    }
+</style>

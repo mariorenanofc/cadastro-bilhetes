@@ -2,7 +2,6 @@
     <div>
         <h1>Sobre: </h1>
         <p>{{ nome }}</p>
-        <Form />
         <p v-show="mostrar_nome"> {{ status }}</p>
         <br>
         <p  v-if="esta_trabalhando">🟢 - Sistema Online</p>
