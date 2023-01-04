@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>  {{ email}} </p>
         <p>Seguintes tecnólogias para Backend de Site:</p>
         <ul >
             <li v-for="(techlings, index) in backend_tecnologia" v-bind:key="index" >{{ techlings }}</li>
@@ -20,6 +21,7 @@ import Picture from './Picture.vue'
   components: { Picture },
         data() {
             return {
+            email: "mariorenan25@gmail.com",
             meu_link: 'https://mariorenanofc.github.io/Portifo-lio/',
             backend_tecnologia: ["Javascript","MySQL","Python"],
             frontend_tecnologia:[
@@ -29,6 +31,9 @@ import Picture from './Picture.vue'
             ]
         }
         },
+        props: {
+            email: String
+        }
 
     }
 

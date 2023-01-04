@@ -1,3 +1,12 @@
+<template>
+  <div>
+    <Header />
+    <PrimeiroComponente />
+    <LifeCycle />
+    <Pessoa />
+    <Info :email="email" />
+  </div>
+</template>
 
 <script>
 import Info from './components/Info.vue'
@@ -18,15 +27,6 @@ import Header from './components/Header.vue';
   }
 </script>
 
-<template>
-  <div>
-    <Header />
-    <PrimeiroComponente />
-    <LifeCycle />
-    <Pessoa />
-    <Info  />
-  </div>
-</template>
 
 <style>
   body {
